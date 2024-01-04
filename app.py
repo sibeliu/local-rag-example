@@ -3,12 +3,7 @@ import tempfile
 import streamlit as st
 from streamlit_chat import message
 from rag import ChatPDF
-# import pkg_resources
-# pkg_resources.require("sqlite3==3.44.2")
-# import sqlite3
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 st.set_page_config(page_title="ChatPDF")
 
